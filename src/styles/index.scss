@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgba(225, 42, 42, 0.5);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+
+  background: rgba(225, 42, 42, 0.251);
+  border-radius: 10px;
+}
+
+.fail {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
