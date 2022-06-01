@@ -6,12 +6,23 @@ import TimeBlock from "./TimeBlock";
 const ResponsivePlayer = ({ src, timer, isPlay, btnPlay }) => {
   return (
     <>
-      <div style={ isPlay === false ? { color: "white", background: "#000" } : { color: "#FF0059" }} className="player-wrapper" >
+      <div
+        style={
+          isPlay === false
+            ? { color: "white", background: "#000" }
+            : { color: "#FF0059" }
+        }
+        className="player-wrapper"
+      >
         <div
           className="timer left"
           style={isPlay === false ? { display: "none" } : { display: "block" }}
         >
-          <TimeBlock img={"/img/time_left.svg"} imgFull={"/img/time_left-full.svg"} timer={timer}/>
+          <TimeBlock
+            img={"/img/time_left.svg"}
+            imgFull={"/img/time_left-full.svg"}
+            timer={timer}
+          />
         </div>
 
         <ReactPlayer
@@ -29,8 +40,15 @@ const ResponsivePlayer = ({ src, timer, isPlay, btnPlay }) => {
           <img src="/img/play_btn.svg" alt="" />
         </button>
 
-        <div className="timer right" style={isPlay === false ? { display: "none" } : { display: "block" }}>
-          <TimeBlock img={"/img/time_right.svg"} imgFull={"/img/time_right-full.svg"} timer={timer}/>
+        <div
+          className="timer right"
+          style={isPlay === false ? { display: "none" } : { display: "block" }}
+        >
+          <TimeBlock
+            img={"/img/time_right.svg"}
+            imgFull={"/img/time_right-full.svg"}
+            timer={timer}
+          />
         </div>
       </div>
     </>
